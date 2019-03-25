@@ -1,20 +1,19 @@
 <template>
   <div id="app">
    <assignment-one></assignment-one>
+   <assignment-two></assignment-two>
   </div>
 </template>
 
 <script>
-import assignment1 from './components/assignment1';
+
 
 export default {
-  components:{
-    'assignment-one':assignment1,
-  },
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      
     }
   }
 }
