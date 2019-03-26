@@ -2,6 +2,7 @@
   <div id="app">
    <assignment-one></assignment-one>
    <assignment-two v-bind:second="lists"></assignment-two>
+   <assignment-three v-bind:second="lists"></assignment-three>
   </div>
 </template>
 
@@ -28,9 +29,9 @@ export default {
 
 <style lang="scss">
 .assignment{
-  width: 500px;
-  height: 180px;
-  margin: auto;
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
   border: 1px solid #999;
   background: #eee;
   padding: 10px;
