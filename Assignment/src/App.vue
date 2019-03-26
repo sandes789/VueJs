@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    <assignment-one></assignment-one>
-   <assignment-two></assignment-two>
+   <assignment-two v-bind:second="lists"></assignment-two>
   </div>
 </template>
 
@@ -13,6 +13,13 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
+      lists:[
+        {todo:'Cras justo odio'},
+        {todo:'Dapibus ac facilisis in'},
+        {todo:'Morbi leo risus'},
+        {todo:'Porta ac consectetur ac'},
+        {todo:'Vestibulum at eros'},
+      ]
       
     }
   }

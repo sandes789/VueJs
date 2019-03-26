@@ -2,7 +2,7 @@
   <div id="assignment2" class="assignment">
    <h3>{{title}}</h3>
    <ul class="list-group">
-      <li class="list-group-item" v-for="list in lists" v-bind:second="list.todo"></li>
+      <li v-for="list in second" class="list-group-item" >{{list.todo}}</li>
    </ul>
   </div>
 </template>
@@ -13,6 +13,7 @@ export default {
   data () {
     return {
       title: 'Assignment 2',
+  
     }
   },
 }
