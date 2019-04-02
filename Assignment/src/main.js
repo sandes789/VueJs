@@ -14,6 +14,16 @@ Vue.component('assignment-three',{
   extends:assignment3,
 });
 
+Vue.component("custm-btn", {
+  template: `<button v-on:click="eventcall"><slot></slot></button>`,
+  methods: {
+    eventcall:function(){
+      this.$emit('change');
+    }
+  },
+  
+});
+
 new Vue({
   el: '#app',
   render: h => h(App),
