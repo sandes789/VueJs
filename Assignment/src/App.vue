@@ -4,8 +4,12 @@
    <assignment-two v-bind:second="lists"></assignment-two>
    <assignment-three v-bind:third="lists"></assignment-three>
    <assignment-four v-bind:four="lists"></assignment-four> -->
-   <button v-for="tab in tabs" :key="tab.id" v-on:click="currentTab=tab.name">{{tab.name}}</button>
-   <component v-bind:is="currentTabComponent" v-bind:four="lists"></component>
+   <!-- <button v-for="tab in tabs" :key="tab.id" v-on:click="currentTab=tab.name">{{tab.name}}</button>
+   <component v-bind:is="currentTabComponent" v-bind:four="lists"></component> -->
+
+   <router-view></router-view>
+   <router-link to='/one'>Assignment One</router-link>
+   <router-link to='/four'>Assignment Four</router-link>
   </div>
 </template>
 

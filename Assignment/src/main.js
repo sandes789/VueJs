@@ -4,6 +4,7 @@ import assignment1 from "./components/assignment1";
 import assignment2 from "./components/assignment2";
 import assignment3 from "./components/assignment3";
 import assignment4 from "./components/assignment4";
+import router from "./router"
 
 Vue.component("assignment-one", assignment1);
 
@@ -30,6 +31,7 @@ Vue.component("cust-button", {
 
 new Vue({
   el: "#app",
+  router,
   render: h => h(App),
   data() {
     return {
